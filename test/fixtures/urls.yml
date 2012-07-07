@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  long_url: MyString
+  short_url: MyString
+  redirections: 1
+
+two:
+  long_url: MyString
+  short_url: MyString
+  redirections: 1

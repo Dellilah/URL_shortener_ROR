@@ -1,0 +1,16 @@
+<p>
+  <b>Long url:</b>
+  <%= @url.long_url %>
+</p>
+
+<p>
+  <b>Short url:</b>
+  <input type="text" value="<%= 'localhost:3000' + '/u/'+ @url.short_url %>" readonly size="50"/>
+</p>
+
+<p>
+  <b>Redirections:</b>
+  <%= @url.redirections %>
+</p>
+
+<%= link_to 'Back', new_url_path %>

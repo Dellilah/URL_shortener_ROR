@@ -1,0 +1,19 @@
+<h1>URL Shortener</h1>
+
+ <% if @error %>
+    <div id="error_explanation">
+      <h2> Error </h2>
+      <%= @error %>
+    </div>
+  <% end %> 
+
+<h2> Make your long url short! </h2>
+<%= form_tag :controller => "urls", :action => "shorten_url" do %>
+  <%= text_field_tag(:long_url) %>
+  <%= submit_tag("Shorten me!") %>
+<%end%>
+<h2> Check stats of your shortened url </h2>
+<%= form_tag :controller => "urls", :action => "check_stats" do %>
+  <%= text_field_tag(:short_url) %>
+  <%= submit_tag("Check stats") %>
+<%end%>
